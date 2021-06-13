@@ -1,0 +1,172 @@
+body {
+  display: flex;
+  background: url(images/bg-intro-desktop.png), hsl(0, 100%, 74%);
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.desc {
+  margin-left: 40px;
+  padding-left: 20px;
+}
+
+.desc h1 {
+  font-weight: 700;
+  font-size: 3em;
+  color: white;
+  line-height: 50px;
+}
+
+.desc p {
+  width: 85%;
+  margin-top: 0;
+}
+
+.offer {
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  color: white;
+  padding: 1px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.application {
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form {
+  margin: 35px;
+  text-align: right;
+}
+
+.application input {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  padding-left: 15px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.application img {
+  position: absolute;
+  transform: translateX(-150%) translateY(70%);
+}
+
+.application p {
+  color: red;
+  font-size: 0.8em;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.application button {
+  background-color: hsl(154, 59%, 51%);
+  outline: none;
+  border: none;
+  width: 420px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 4px rgb(45, 163, 112);
+  color: white;
+  font-size: large;
+  font-weight: 700;
+}
+
+button:hover {
+  transform: scale(0.99);
+  cursor: pointer;
+}
+
+.application #terms {
+  margin-top: -15px;
+  font-size: 0.7em;
+  color: rgb(119, 119, 119);
+  font-weight: 600;
+}
+
+#terms span {
+  cursor: pointer;
+  color: red;
+}
+
+.seconedpart {
+  margin-right: 220px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hidden1 {
+  display: none;
+}
+
+.warning {
+  border: 0.5px solid red !important;
+}
+
+.warningemail::placeholder {
+  color: red;
+}
+
+@media screen and (max-width: 1050px) {
+  body {
+    flex-flow: column;
+  }
+
+  .desc {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .desc p {
+    margin: 20px;
+  }
+
+  .seconedpart {
+    margin-right: 0;
+    width: 80%;
+  }
+
+  .application {
+    width: 100%;
+  }
+  .Form {
+    width: 80%;
+  }
+  .Form div input {
+    width: 95%;
+  }
+
+  .Form button {
+    width: 102%;
+  }
+  #terms {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .application img {
+    /* display: flex; */
+
+    transform: translateX(-150%) translateY(-245%) !important;
+  }
+}
